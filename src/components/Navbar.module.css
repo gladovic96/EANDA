@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'David Libre', serif;
+}
+
+.container {
+  max-width: 1280px;
+}
+
+.nav {
+  position: fixed;
+  background-color: #cad2c5;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  color: #354f52;
+}
+
+.nav ul li {
+  padding: 20px 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav ul li:hover {
+  color: #fff;
+}
+
+.nav ul h1 {
+  font-size: 50px;
+}
+
+.nav ul h1 span {
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .nav ul li {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .nav ul li {
+    display: none;
+  }
+}
