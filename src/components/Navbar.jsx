@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={styles.nav}>
+    <div className={styles.navBar}>
       <div className={styles.container}>
         <ul>
           <li>Home</li>
