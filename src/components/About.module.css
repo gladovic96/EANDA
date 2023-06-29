@@ -1,0 +1,53 @@
+.aboutText {
+  padding-top: 100px;
+  text-align: center;
+  background-color: #d9dfd6;
+}
+
+.aboutText h1 {
+  border-top: 2px solid #000;
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 50px;
+  color: #036666;
+}
+
+.aboutText p {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 60px 0px 120px 0px;
+  line-height: 2.7;
+  font-size: 21px;
+}
+
+.aboutEandaColor {
+  color: #036666;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media (max-width: 1250px) {
+  .aboutText p {
+    width: 800px;
+    line-height: 2.3;
+  }
+}
+
+@media (max-width: 850px) {
+  .aboutText p {
+    margin: 0 auto;
+    width: 500px;
+    padding: 60px 0px 120px 0px;
+    line-height: 1.5;
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutText p {
+    width: 400px;
+    line-height: 1.5;
+    font-size: 21px;
+  }
+}

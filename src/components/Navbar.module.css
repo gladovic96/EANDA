@@ -1,47 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=David+Libre&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'David Libre', serif;
-}
-
-.container {
-  max-width: 1280px;
-}
-
-.nav {
+.navBar {
   position: fixed;
   background-color: #cad2c5;
   height: 100px;
   width: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: space-evenly;
+  z-index: 10;
 }
 
-.nav ul {
+.navBar ul {
   display: flex;
   list-style-type: none;
   align-items: center;
-  color: #354f52;
+  justify-content: center;
+  color: #036666;
+  margin: 15px -70px 0px 0px;
 }
 
-.nav ul li {
+.navBar ul li {
   padding: 20px 50px;
   font-size: 20px;
   cursor: pointer;
 }
 
-.nav ul li:hover {
+.navBar ul li:hover {
   color: #fff;
 }
 
-.nav ul h1 {
+.navBar ul h1 {
   font-size: 50px;
 }
 
-.nav ul h1 span {
+.navBar ul h1 span {
   font-size: 15px;
   align-items: center;
   justify-content: center;
@@ -49,14 +37,88 @@
   font-weight: 500;
 }
 
+.dropDownMenu {
+  display: none;
+}
+
+.dropDownNav {
+  font-size: 20px;
+  margin-top: 100px;
+}
+
+.dropDownNav li {
+  color: #000;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.dropDownNav li:hover {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.left0 {
+  left: 0;
+}
+
+.hFull {
+  height: 100%;
+}
+
+.top0 {
+  top: 0;
+}
+
+.w50 {
+  width: 40%;
+}
+
+.borderR {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.borderRGray900 {
+  border-color: #000;
+}
+
+.bg000300 {
+  background-color: rgba(202, 210, 197, 0.8);
+}
+
+.easeInOut {
+  transition-timing-function: ease-in-out;
+}
+
+.duration500 {
+  transition-duration: 500ms;
+}
+
+.leftNegative100 {
+  left: -100%;
+}
+
 @media (max-width: 900px) {
-  .nav ul li {
+  .navBar ul li {
     padding: 20px 20px;
   }
 }
 
 @media (max-width: 620px) {
-  .nav ul li {
+  .navBar ul li {
     display: none;
+  }
+  .navBar ul {
+    margin-right: -20px;
+  }
+  .dropDownMenu {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 40px;
   }
 }

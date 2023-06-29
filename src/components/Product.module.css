@@ -1,0 +1,113 @@
+.productWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 1280px;
+  margin: auto;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+.productTitle {
+  width: 1280px;
+  margin: auto;
+  color: #036666;
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.productName,
+.productImg img,
+.productImgDesc img,
+.productDesc {
+  width: 50%;
+  height: 500px;
+}
+
+.productImg img,
+.productImgDesc img {
+  width: 500px;
+}
+
+.productImgDesc {
+  display: none;
+}
+
+.productName {
+  margin-top: 70px;
+}
+
+.productName h2,
+.productDesc h2 {
+  color: #036666;
+  font-size: 40px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.productName p {
+  text-align: center;
+  line-height: 2;
+  font-size: 20px;
+  width: 500px;
+  margin: auto;
+}
+
+.tehnicalData {
+  background-image: url(../assets/Tehnical-data.jpg);
+  height: 500px;
+  width: 500px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 50px;
+}
+
+.productDesc ul li {
+  font-size: 20px;
+  list-style-type: none;
+}
+
+@media (max-width: 1300px) {
+  .productWrapper {
+    width: 1000px;
+  }
+  .productTitle {
+    width: 900px;
+  }
+
+  .productName,
+  .productImg img,
+  .productImgDesc img,
+  .productDesc {
+    width: 500px;
+    height: 400px;
+  }
+  .tehnicalData {
+    width: 450px;
+  }
+}
+
+@media (max-width: 800px) {
+  .productWrapper,
+  .productDesc,
+  .productImgDesc img,
+  .productImg img,
+  .productTitle {
+    width: 500px;
+  }
+
+  .productName {
+    width: 100%;
+    height: 300px;
+  }
+
+  .productName p {
+    width: 400px;
+    margin-bottom: 30px;
+  }
+}
